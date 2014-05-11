@@ -1,0 +1,6 @@
+highlighter: pygments
+url: http://stathers.net
+
+host: 127.0.0.1
+paginate: 1
+exclude: README.md

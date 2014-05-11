@@ -1,0 +1,159 @@
+---
+layout: default
+title: Stathers.net - Useful Linux Commands
+---
+<div style="font-style:italic; color:red; text-align:center">Will be moved to the wiki soon: <a href=https://wiki.stathers.net target="_blank">https://wiki.stathers.net/</a></div>
+<h2>Useful Linux Commands</h2>
+<em>Please note that I typically use Ubuntu, so these commands may not work for other operating systems.</em>
+<dl>
+<dt><code>sudo update-alternatives --config editor</code></dt>
+<dd><dfn>Changes default editor</dfn></dd>
+</dl>
+<h3>File Managemnet</h3>
+<dl>
+<dt><code>ls -lh</code></dt>
+<dd><dfn>Lists directory contents with human readable filesizes (eg. KB, MB, etc.)</dfn></dd>
+
+<dt><code>ls -lt</code></dt>
+<dd><dfn>Lists directory contents ordered based on last modified time</dfn></dd>
+
+<dt><code>ls -ltr</code></dt>
+<dd><dfn>Lists directory contents ordered based on last modified time(reverse order)</dfn></dd>
+
+<dt><code>cd -</code></dt>
+<dd><dfn>Toggle change directory between last two directories</dfn></dd>
+
+<dt><code>find -iname [searchFile]</code></dt>
+<dd><dfn>Searches for file (not case sensitive)</dfn></dd>
+
+<dt><code>tar xvf [archiveName]</code></dt>
+<dd><dfn>Extract files from a <code>.tar</code> archive</dfn></dd>
+
+
+</dl>
+
+<h3>Networking</h3>
+<dl>
+<dt><code>netstat -r</code></dt>
+<dd><dfn>Display kernel routing table</dfn></dd>
+
+<dt><code>netstat -i</code></dt>
+<dd><dfn>List network interfaces</dfn></dd>
+
+<dt><code>netstat -ie</code></dt>
+<dd><dfn>Extended list of network interfaces (alt. <code>ifconfig</code>)</dfn></dd>
+
+<dt><code>dhclient -v</code></dt>
+<dd><dfn>Refresh DHCP address</dfn></dd>
+
+<dt><code>ifconfig [interfaceName] down</code></dt>
+<dd><dfn>Disables an interface</dfn></dd>
+
+<dt><code>ifconfig [interfaceName] up</code></dt>
+<dd><dfn>Enables an interface</dfn></dd>
+
+<dt><code>ifconfig [interfaceName] [ipAddress] netmask [subnetMask] broadcast [broadcastAddress]</code></dt>
+<dd><dfn>Configures an ip address, subnet mask and broadcast address on an interface. You can choose to exclude any of the mentioned</dfn></dd>
+
+<dt><code>ifconfig [interfaceName] promisc</code></dt>
+<dd><dfn>Places an interface in promiscuous mode</dfn></dd>
+
+<dt><code>ifconfig [interfaceName] -promisc</code></dt>
+<dd><dfn>Places an interface in normal mode</dfn></dd>
+</dl>
+
+<h3>Package management</h3>
+<dl>
+<dt><code>apt-get install [packageName1] [packageName2] [...]</code></dt>
+<dd><dfn>Installs specified package(s)</dfn></dd>
+
+<dt><code>apt-cache search [packageName]</code></dt>
+<dd><dfn>Searches for a package name based on name or description</dfn></dd>
+
+<dt><code>apt-cache show [packageName]</code></dt>
+<dd><dfn>Displays basic information about a package</dfn></dd>
+
+<dt><code>apt-cache showpkg [packageName]</code></dt>
+<dd><dfn>Displays detailed information about a package</dfn></dd>
+
+<dt><code>apt-cache depends [packageName]</code></dt>
+<dd><dfn>Lists all dependent packages</dfn></dd>
+
+<dt><code>apt-cache list [packageName]</code></dt>
+<dd><dfn>Lists all files located within a package</dfn></dd>
+</dl>
+<dl>
+<dt><code>dpkg -i [packageName]</code></dt>
+<dd><dfn>Installs a a debian  "</dfn><code>.deb</code><dfn>" package</dfn></dd>
+
+<dt><code>dpkg -r [packageName]</code></dt>
+<dd><dfn>Uninstalls a "</dfn><code>.deb</code><dfn>" package</dfn></dd>
+</dl>
+
+<h3>User Management</h3>
+<dl>
+<dt><code>adduser [username]</code></dt>
+<dd><dfn>Create a user interactively</dfn></dd>
+
+<dt><code>useradd [username]</code></dt>
+<dd><dfn>Create a user with the defaults as shown by "</dfn><code>useradd -D</code><dfn>"</dfn></dd>
+
+<dt><code>passwd [username]</code></dt>
+<dd><dfn>Change password for a user</dfn></dd>
+</dl>
+
+<h3>System Information</h3>
+<dl>
+<dt><code>uname -a</code></dt>
+<dd><dfn>Displays important system information</dfn></dd>
+
+<dt><code>lshw | less</code></dt>
+<dd><dfn>LiSt HardWare displays detailed system information. Run as root to get all information</dfn></dd>
+
+<dt><code>lshw -short</code></dt>
+<dd><dfn>Displays a compact hardware report</dfn></dd>
+
+<dt><code>lshw -class [hardwareClass]</code></dt>
+<dd><dfn>Different hardware classes are listed below<br><code>address<br>bridge<br>bus<br>communication<br>disk<br>display<br>generic<br>input<br>memory<br>multimedia<br>network<br>power<br>printer<br>processor<br>storage<br>system<br>tape<br>volume<br></code></dfn></dd>
+
+<dt><code>free</code></dt>
+<dd><dfn>Displays free, used, swap memory</dfn></dd>
+
+<dt><code>df -h</code></dt>
+<dd><dfn>Displays file system disk space usage in human readable form</dfn></dd>
+
+<dt><code>dmidecode</code></dt>
+<dd><dfn>Reads system DMI to display hardware and BIOS information</dfn></dd>
+
+<dt><code>dmidecode -t [typeCode]</code></dt>
+<dd><dfn>Different type codes are displayed below<br><code>0   - BIOS<br>1   - System<br>2   - Base Board<br>3   - Chassis<br>4   - Processor<br>5   - Memory Controller<br>6   - Memory Module<br>7   - Cache<br>8   - Port Connector<br>9   - System Slots<br>10 - On Board Devices<br>11 - OEM Strings<br>12 - System Configuration Options<br>13 - BIOS Language<br>14 - Group Associations<br>15 - System Event Log<br>16 - Physical Memory Array<br>17 - Memory Device<br>18 - 32-bit Memory Error<br>19 - Memory Array Mapped Address<br>20 - Memory Device Mapped Address<br>21 - Built-in Pointing Device<br>22 - Portable Battery<br>23 - System Reset<br>24 - Hardware Security<br>25 - System Power Controls<br>26 - Voltage Probe<br>27 - Cooling Device<br>28 - Temperature Probe<br>29 - Electrical Current Probe<br>30 - Out-of-band Remote Access<br>31 - Boot Integrity Services<br>32 - System Boot<br>33 - 64-bit Memory Error<br>34 - Management Device<br>35 - Management Device Component<br>36 - Management Device Threshold Data<br>37 - Memory Channel<br>38 - IPMI Device<br>39 - Power Supply<br></code></dfn></dd>
+</dl>
+
+<h3>System Troubleshooting</h3>
+<dl>
+<dt><code>service --status-all</code></dt>
+<dd><dfn>Check the status of all services</dfn></dd>
+
+<dt><code>dmesg | less</code></dt>
+<dd><dfn>View boot messages</dfn></dd>
+
+<dt><code>dmesg | grep [search term]</code></dt>
+<dd><dfn>Search status of different devices.<br>eg. "dmesg | grep memory" will show memory use, available, total memory and a various other things related to memory</dfn></dd>
+
+<dt><code>ps -efH | less</code></dt>
+<dd><dfn>Lists currently running processes in a tree structure</dfn></dd>
+
+</dl>
+
+<h3>Hard Disk Management</h3>
+<dl>
+<dt><code>fdisk -l</code></dt>
+<dd><dfn>View all available partitions</dfn></dd>
+
+<dt><code>fdisk -l [diskName]</code></dt>
+<dd><dfn>View all available partitions of a specific disk</dfn></dd>
+
+<dt><code>fdisk [diskName]</code></dt>
+<dd><dfn>Enter interactive mode (push "m" for help)</dfn></dd>
+</dl>
+</div>

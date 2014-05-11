@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>{{ page.title }}</title>
+    <meta name="author" content="Michael Stathers" />
+
+
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+    <!-- Homepage CSS -->
+    <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" />
+</head>
+<body>
+
+<div class="header">
+    <h1><a class="header" href=/>Stathers.net</a></h1>
+</div>
+
+<div class="nav_bar">
+    <div id="nav">
+        <ul class="nav_ul">
+            <li class="nav"><a class="nav" href="/">Home</a></li>
+            <li class="nav"><a class="nav" href="http://stathers.net/minecraft-new.php" target="_blank">Minecraft Server</a></li>
+            <li class="nav"><a class="nav" href="/projects.html">Projects</a></li>
+            <li class="nav"><a class="nav" href="/commands.html">Useful Linux Commands</a></li>
+            <li class="nav"><a class="nav" href="https://wiki.stathers.net" target="_blank">Wiki</a></li>
+            <li class="nav"><a class="nav" href="/contact.html">Contact Me</a></li>
+        </ul>
+    </div>
+    <div id="blog_index">
+      <a href=/blog-list.html>All Blog Posts</a>
+      <ul class="nav_ul">
+        {% for post in site.posts %}
+          <li><div class="nav_ul_div"><a href="{{ post.url }}">&raquo; {{ post.title }}</a></div></li>
+        {% endfor %}
+      </ul>
+    </div>
+</div>
+
+<div class="site">
+    {{ content }}
+</div>
+
+<div class="footer">
+    Stathers.net
+    <div>
+        <!-- LINKEDIN -->
+        <a style="float:left" href=http://www.linkedin.com/in/mstathers target="_blank"><img src=/css/InBug-30px-R.png /></a>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+---
+layout: default
+title: Stathers.net - Projects
+---
+<h2>Projects & Scripts</h2>
+<div style="font-style:italic; color:red; text-align:center">Will be moved to <a href=https://github.com/ target="_blank">GitHub</a> soon.</div>
+These are just some of my projects that I like to work on. I cannot verify that they will work and please only use them at your risk.<br /><br />
+<div>
+    <h3>bassad</h3>
+    <a href="projects/bassad-big.jpg"><img src="projects/bassad.jpg"  alt="bassad screenshot"></a>
+    <p>A script to generate a nice list of video files, with links within a directory. I honestly cannot remember the origin of the name, it has just kind of "stuck".</p>
+    <p>Within the tarball, you will find an index.php file - simply move the file into a directory which will be served by your webserver (typically /var/www/). There are some options you can set within the file: title name, video directory and background color.</p>
+    <ul>
+    <li>2012-11-18
+        <ul>
+        <li>Added seach function</li>
+        </ul>
+    </li>
+    <li>2012-11-19
+        <ul>
+        <li>Fixed regex escaping bug</li>
+        <li>Improved HTML character conversion</li>
+        </ul>
+    </li>
+    </ul>
+    Download: <a href="projects/bassad.tar.bz2">bassad.tar.bz2</a>
+</div>
+
+<div>
+    <h3>hackAttempts.sh</h3>
+    <p>Don't get excited, this is only a reporting tool! It seems like botnets/scriptkiddies like to run scripted attacks against IP addresses with port 22 open. I wanted to keep track of these attacks and find out where they are coming from, so I made my hackAttempts.sh script.</p>
+    <p>Yes, I realize that I could just change my port number to be protected from these attacks, but that is no fun! Additionally. I use <a href="http://www.fail2ban.org" target="_blank">fail2ban</a> to actually stop these scripted attacks.</p>
+    <p>Please note that you will be required to create a cronjob or a crontab entry if you want this script to run regularly. You will also need to ensure that the 'mail' command is configured and available if you would like the script to email you when there is a new attack.</p>
+    <p>The download contains the bash script, as well as a sample output log.</p>
+    Download: <a href="projects/hackAttempts.tar.bz2">hackAttempts.tar.bz2</a>
+</div>
