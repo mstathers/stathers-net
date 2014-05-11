@@ -17,4 +17,4 @@ Another great feature of Jekyll is that it is designed to be blog friendly! Blog
 
 Thanks for reading!
 
-    - Michael
+ &#45; Michael
