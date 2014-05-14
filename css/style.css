@@ -109,6 +109,18 @@ blockquote {
 div.post_nav_buttons {
 }
 
+
+div.contact_columns {
+    float: left;
+    margin: 5px;
+}
+
+img.contact {
+    margin:3px;
+    width:250px;
+    display:block;
+}
+
 .footer {
     text-align: center;
     height: 50px;

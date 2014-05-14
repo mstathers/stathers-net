@@ -1,4 +1,14 @@
-.highlight  { background: #D5D5E0; line-height: 1em; font-family: "Lucida Console", Monaco, monospace; }
+.highlight  {
+    background:#D5D5E0;
+    line-height:1em;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    margin-left:15px;
+    margin-right:15px;
+    padding:2px;
+}
+
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .k { font-weight: bold } /* Keyword */
