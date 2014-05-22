@@ -99,6 +99,13 @@ div#post {
     padding-top: 10px;
 }
 
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background: #A0A0A0;
+}
+
 blockquote {
     background: #D5D5E0;
     border-left: 10px solid #B5B5B5;
