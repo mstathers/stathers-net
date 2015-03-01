@@ -9,7 +9,6 @@ html {
 }
 
 body {
-    /*font-family: Verdana, Geneva, sans-serif; */
     font-family: Inconsolata;
     font-size: 110%;
 }
@@ -36,7 +35,7 @@ a.header {
 
 .nav_bar {
     float: left;
-    width: 280px;
+    width: 16%;
     margin: 4px;
     margin-top: 0px;
     padding: 4px;
@@ -72,20 +71,21 @@ div.nav_ul_div {
     white-space: nowrap; 
     overflow: hidden; 
     text-overflow: ellipsis; 
-    width: 270px;
 }
 
 
 
 
 .site {
-    width: 720px;
+    float: left;
+    width: 72%;
     margin: 4px auto;
     padding: 4px;
     padding-bottom: 50px;
-    text-align: justify;
     line-height: 1.5em;
     min-height: 650px;
+    display: inline-block;
+    word-wrap: normal;
 }
 
 div#page_title {
