@@ -1,7 +1,6 @@
 @font-face {
     font-family: Inconsolata;
     src: url('ttf-inconsolata-webfont.ttf');
-    url('ttf-inconsolata-webfont.eot');
 }
 
 html {
@@ -96,7 +95,7 @@ div#page_date {
 }
 
 div#post {
-    padding-top: 10px;
+    padding-top: 13px;
 }
 
 hr {
