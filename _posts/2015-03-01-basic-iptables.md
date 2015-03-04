@@ -5,7 +5,7 @@ title: iptables - Simple Base Configuration
 
 I find this is a great configuration to start with when working on a new server. From here, I typically customize based on the nature of the server. Hint: take a look at the listening services on the server and evaluate whether or not those services need to be locked down, database connections are a great example of this. I like to use a quick `netstat -nlp` command for this.
 
-{% highlight bash linenos %}
+{% highlight bash %}
 iptables -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
 iptables -A INPUT -p tcp -m state --state NEW -m tcp -m multiport --dports 80,443 -j ACCEPT
 iptables -A INPUT -p tcp -m state --state NEW -m tcp --dport 22 -m iprange --src-range 10.9.8.7-10.9.8.10 -j ACCEPT
@@ -16,7 +16,7 @@ BONUS: I was setting up an rwhois server for work and I wanted to implement some
 
 The ICMP line is not required for the rate limiter, I just wanted people to be able to ping this box.
 
-{% highlight bash linenos %}
+{% highlight bash %}
 iptables -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
 iptables -A INPUT -p tcp -m tcp --dport 4321 -m state --state NEW -m recent --update --seconds 60 --hitcount 20 --name rwhois --rsource -j REJECT --reject-with icmp-port-unreachable
 iptables -A INPUT -p tcp -m tcp --dport 4321 -m state --state NEW -m recent --set --name rwhois --rsource
@@ -26,4 +26,4 @@ iptables -A INPUT -p icmp -m icmp --icmp-type 8 -m state --state NEW -j ACCEPT
 iptables -A INPUT -j REJECT --reject-with icmp-host-prohibited
 {% endhighlight %}
 
-PS, if you ask really nicely, I'll tell you about my rwhois easteregg.
+PS, if you ask really nicely, I'll tell you about my rwhois easter-egg.
