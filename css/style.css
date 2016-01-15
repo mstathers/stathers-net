@@ -1,15 +1,37 @@
-@font-face {
-    font-family: Inconsolata;
-    src: url('ttf-inconsolata-webfont.ttf');
-}
-
-html {
-    height: 100%;
-}
-
 body {
-    font-family: Inconsolata;
-    font-size: 110%;
+    font-family: sans-serif;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+.header, .nav_bar, .site, .footer {
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    .nav_bar {
+        width: 15%;
+        padding-bottom: 0px;
+        -webkit-order: 1;
+        order: 1;
+    }
+    .site {
+        width: 84%;
+        -webkit-order: 2;
+        order: 2;
+    }
+    .footer {
+        -webkit-order: 3;
+        order: 3;
+    }
+}
+
+@media (min-width: 800px) {
+    .nav_bar {
+        width: 15%;
+    }
 }
 
 
@@ -33,13 +55,9 @@ a.header {
 
 
 .nav_bar {
-    float: left;
-    width: 16%;
-    margin: 4px;
+    margin: 0.5%;
     margin-top: 0px;
-    padding: 4px;
     padding-top: 0px;
-    padding-bottom: 50px;
 }
 
 #nav {
@@ -47,8 +65,8 @@ a.header {
     -moz-border-radius:4px;
     -webkit-border-radius:4px;
     border-radius:4px;
-    padding-left: 2px;
-    padding-right: 2px;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 #blog_index {
@@ -56,8 +74,8 @@ a.header {
     -moz-border-radius:4px;
     -webkit-border-radius:4px;
     border-radius:4px;
-    padding-left: 2px;
-    padding-right: 2px;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 .nav_ul {
@@ -76,20 +94,10 @@ div.nav_ul_div {
 
 
 .site {
-    float: left;
-    width: 72%;
-    margin: 4px auto;
-    padding: 4px;
-    padding-bottom: 50px;
-    line-height: 1.5em;
     min-height: 650px;
-    display: inline-block;
     word-wrap: normal;
 }
 
-div#page_title {
-    /*text-decoration: underline;*/
-}
 div#page_date {
     color: #A0A0A0;
 }
@@ -107,9 +115,8 @@ hr {
 
 blockquote {
     background: #D5D5E0;
-    border-left: 10px solid #B5B5B5;
-    margin: 10px;
-    padding: 10px;
+    border-left: 1em solid #B5B5B5;
+    padding: 1px 0.5%;
 }
 
 div.post_nav_buttons {
@@ -131,6 +138,5 @@ img.contact {
     text-align: center;
     height: 50px;
     clear: both; 
-    margin-top: -50px;
     padding: 4px;
 }
