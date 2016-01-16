@@ -4,7 +4,7 @@ title: GnuTLS, a Thawte CA certificate and CVE-2015-7575
 ---
 
 ### TLDR;
-If a server is using a certificate signed by the Thawte Premium Server CA
+If a server is using a certificate chain signed by the Thawte Premium Server CA
 (*SHA1
 Fingerprint=62:7F:8D:78:27:65:63:99:D2:7D:7F:90:44:C9:FE:B3:F3:3E:FA:9A*) AND
 that server is distributing that certificate as part of its CA chain, clients
@@ -19,7 +19,7 @@ their website.
 
 ### Overview
 
-*I suddenly could not send email using Mutt and some of my colleges reported
+*I suddenly could not send email using Mutt and some of my colleagues reported
 similar issues with their Claws email clients as well, what was going on?*
 
 At the time of writing we were using Ubuntu 12.04 at work and there had
@@ -40,7 +40,7 @@ signature algorithm.*
 
 It turned out that on one of the mail servers in our cluster, the SMTP daemon
 was configured to provide the root CA certificate as part of its intermediate
-chain (mistake #1). So the server was providing its own certificate, the two
+chain. So the server was providing its own certificate, the two
 required intermediate certificates and the superfluous root certificate.
 
 In case you are unaware why the server does not need to provide the root
