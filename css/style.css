@@ -1,9 +1,11 @@
 body {
     font-family: sans-serif;
-    display: -webkit-flex;
     display: flex;
-    -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
+}
+
+h1,h2,h3,h4 {
+    font-family: sans-serif;
 }
 
 .header, .nav_bar, .site, .footer {
@@ -83,13 +85,13 @@ div.nav_ul_div {
     text-overflow: ellipsis; 
 }
 
-
-
-
 .site {
     min-height: 650px;
     word-wrap: normal;
     margin: 0px auto;
+    font-family: serif;
+    font-size: 1em;
+    line-height: 1.6em;
 }
 
 div#page_date {

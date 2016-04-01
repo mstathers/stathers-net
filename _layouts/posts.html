@@ -9,15 +9,6 @@ layout: default
     {{ page.date | date: "%-d %B %Y" }}
 </div>
 
-<!-- TWITTER -->
-<div style="float:right">
-    <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-</div>
-
-<!-- FACEBOOK -->
-<iframe src="//www.facebook.com/plugins/like.php?href={{ site.url }}{{ page.url }}&amp;width=90&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=28&amp;appId=101305613297240" style="float:right; border:none; overflow:hidden; width:90px; height:28px;"></iframe>
-
 <div id="post">
     {{ content }}
 </div>
