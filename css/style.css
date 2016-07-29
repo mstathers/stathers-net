@@ -1,11 +1,11 @@
 body {
-    font-family: sans-serif;
+    font-family: "Helvetica", "Arial", "sans-serif";
     display: flex;
     flex-flow: row wrap;
 }
 
 h1,h2,h3,h4 {
-    font-family: sans-serif;
+    font-family: "Helvetica", "Arial", "sans-serif";
 }
 
 .header, .nav_bar, .site, .footer {
@@ -29,25 +29,15 @@ h1,h2,h3,h4 {
     }
 }
 
-
-
-a:link, a:visited {
-    color: #000444;
-    text-decoration: none;
-    text-shadow: 0 0 4px #888;
-}
-a:hover, a:active {
-    color: grey;
-    text-decoration: none;
-}
-a.header {
-    color: #000000;
+.header a, .nav_bar a {
+    color: #333;
     text-decoration: none;
     text-shadow: none;
 }
 
-
-
+a {
+    color: #333;
+}
 
 .nav_bar {
     margin: 0.5%;
@@ -89,7 +79,7 @@ div.nav_ul_div {
     min-height: 650px;
     word-wrap: normal;
     margin: 0px auto;
-    font-family: serif;
+    font-family: "Georgia", "serif";
     font-size: 1em;
     line-height: 1.6em;
 }
