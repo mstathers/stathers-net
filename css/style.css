@@ -120,6 +120,15 @@ img.contact {
     display:block;
 }
 
+img.social_icon {
+    height:30px;
+    padding-right:0.5em;
+}
+
+a.img_link {
+    text-decoration: none;
+}
+
 .footer {
     text-align: center;
     height: 50px;
