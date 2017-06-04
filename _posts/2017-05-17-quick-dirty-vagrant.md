@@ -45,7 +45,7 @@ This names two machines, instructs Vagrant to base them on the `centos/7` box an
 It also triggers a script to run upon provisioning the box for the first time. In this case the `bootstrap.sh` script resides in the same directory as the `Vagrantfile` and contains some simple bash commands:
 
 {% highlight bash %}
-cat << EOF > /etc/resolv.con
+cat << EOF > /etc/resolv.conf
 search puppet.local
 nameserver 172.16.0.254
 EOF
