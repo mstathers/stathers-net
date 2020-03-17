@@ -1,7 +1,8 @@
-highlighter: pygments
+highlighter: rouge
 url: http://stathers.net
 
 gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
 host: 127.0.0.1
 paginate: 1
