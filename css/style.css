@@ -46,7 +46,7 @@ a {
 }
 
 #nav {
-    background: #D5D5E0;
+    background: #F1F1F1;
     -moz-border-radius:4px;
     -webkit-border-radius:4px;
     border-radius:4px;
@@ -55,7 +55,7 @@ a {
 }
 
 #blog_index {
-    background: #D5D5E0;
+    background: #F1F1F1;
     -moz-border-radius:4px;
     -webkit-border-radius:4px;
     border-radius:4px;
@@ -70,9 +70,9 @@ a {
 }
 
 div.nav_ul_div {
-    white-space: nowrap; 
-    overflow: hidden; 
-    text-overflow: ellipsis; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .site {
@@ -85,7 +85,7 @@ div.nav_ul_div {
 }
 
 div#page_date {
-    color: #A0A0A0;
+    color: #7F7F7F;
 }
 
 div#post {
@@ -100,8 +100,8 @@ hr {
 }
 
 blockquote {
-    background: #D5D5E0;
-    border-left: 1em solid #B5B5B5;
+    background: #F1F1F1;
+    border-left: 1em solid #7F7F7F;
     padding: 1px 0.5%;
 }
 
@@ -132,6 +132,6 @@ a.img_link {
 .footer {
     text-align: center;
     height: 50px;
-    clear: both; 
+    clear: both;
     padding: 4px;
 }
