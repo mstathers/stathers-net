@@ -135,3 +135,31 @@ a.img_link {
     clear: both;
     padding: 4px;
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #181a1b;
+        color: rgb(232, 230, 227);
+    }
+    .header a, .nav_bar a, a {
+        color: rgb(232, 230, 227);
+    }
+    #nav {
+        background: #202324;
+    }
+    #blog_index {
+        background: #202324;
+    }
+    blockquote {
+        background: #202324;
+    }
+
+    .highlight .o { color: #848181 } /* Operator */
+    .highlight .s { background-color: #3a3131 } /* Literal.String */
+    .highlight .sb { background-color: #3a3131 } /* Literal.String.Backtick */
+    .highlight .s2 { background-color: #3a3131 } /* Literal.String.Double */
+    .highlight .se { color: #606060; font-weight: bold; background-color: #3a3131 } /* Literal.String.Escape */
+    .highlight .sh { background-color: #3a3131 } /* Literal.String.Heredoc */
+    .highlight .sh { background-color: #3a3131 } /* Literal.String.Heredoc */
+    .highlight .s1 { background-color: #3a3131 } /* Literal.String.Single */
+}
