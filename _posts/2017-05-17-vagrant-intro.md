@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: Dirty Vagrant
+title: Vagrant Intro
 ---
 
 > <a href="https://www.vagrantup.com/" target="_blank">Vagrant</a> is a tool for building and managing virtual machine environments in a single workflow. With an easy-to-use workflow and focus on automation, Vagrant lowers development environment setup time, increases production parity, and makes the "works on my machine" excuse a relic of the past.
