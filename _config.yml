@@ -6,4 +6,4 @@ plugins: [jekyll-paginate]
 
 host: 127.0.0.1
 paginate: 1
-exclude: [README.md]
+exclude: [README.md, Makefile]
