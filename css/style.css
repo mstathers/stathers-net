@@ -162,4 +162,5 @@ a.img_link {
     .highlight .sh { background-color: #3a3131 } /* Literal.String.Heredoc */
     .highlight .sh { background-color: #3a3131 } /* Literal.String.Heredoc */
     .highlight .s1 { background-color: #3a3131 } /* Literal.String.Single */
+    .highlight .na { color: #66B0FF } /* Name.Attribute */
 }
