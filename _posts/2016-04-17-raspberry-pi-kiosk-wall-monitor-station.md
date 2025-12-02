@@ -1,6 +1,7 @@
 ---
 layout: posts
 title: Raspberry Pi - Kiosk Style Wall Monitor
+tags: raspberry_pi linux
 ---
 
 It is not unusual to setup some displays to provide at-a-glance metrics for the various systems under your care. With great software like <a href="https://www.nagios.org/" target="_blank">Nagios</a>, <a href="http://www.cacti.net/" target="_blank">Cacti</a>, <a href="http://www.splunk.com/" target="_blank">Splunk</a>, <a href="https://www.graylog.org/" target="_blank">Graylog</a> and many others, it is easy to collect, centralize and visualize your data. However, in this article I want to talk about an easy and cost-effective way to handily display this data.

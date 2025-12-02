@@ -1,6 +1,7 @@
 ---
 layout: posts
 title: FreeIPA dirsrv Segfault
+tags: linux
 ---
 
 Our FreeIPA server 4.6.8-5 running on CentOS 7 recently had a problem. We couldn't start the dirsrv service. Investigation in the kernal log revealed a segfault.

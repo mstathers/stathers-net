@@ -1,6 +1,7 @@
 ---
 layout: posts
 title: Project - Video List Website
+tags: linux
 ---
 
 An old project, revived, cleaned up and posted to <a href="https://github.com/mstathers/video-list-website/" target="_blank">GitHub</a>.

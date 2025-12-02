@@ -1,6 +1,7 @@
 ---
 layout: posts
 title: Linux - Source Policy Routing
+tags: networking linux
 ---
 
 *"If I have two networks attached to my server, how do I make sure traffic that comes into an interface goes out the same interface?"*

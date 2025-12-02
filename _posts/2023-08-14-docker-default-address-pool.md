@@ -1,6 +1,7 @@
 ---
 layout: posts
 title: Docker Default Address Pool
+tags: docker
 ---
 
 Every time a [Docker Compose](https://docs.docker.com/compose/){:target=_blank} application starts it creates a [Docker network](https://docs.docker.com/network/){:target=_blank} to facilitate inter-container communication. I encountered a problem where sometimes the network assigned to the application would conflict with services running on our internal network. Troubleshooting this is a different discussion, but the fix is straightforward, the default address pool from which Docker assigns new Docker networks needs to change.

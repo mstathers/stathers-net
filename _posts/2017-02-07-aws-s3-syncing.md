@@ -1,6 +1,7 @@
 ---
 layout: posts
 title: Syncing files to Amazon's AWS S3
+tags: linux web_hosting aws
 ---
 
 Many people have heard of Amazon's cloud product, <a href="https://aws.amazon.com/" target="_blank">AWS</a>. The story behind it is really interesting and well worth the read. I wont go into it here, but the short version of it is that Amazon developed a solution in-house to serve up their online store. This technology was so good that they were able to successfully split it into it's own $150 USD billion dollar product (estimated in 2015).

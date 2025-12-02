@@ -8,6 +8,14 @@ title: Stathers.net
 </div>
 <div id="page_date">
     {{ first_post.date | date: "%-d %B %Y" }}
+
+    {%- if first_post.tags -%}
+        {% for tag in first_post.tags %}
+            <a href="{{site.baseurl}}/tag/{{tag | slugize}}">
+                #{{ tag }}
+            </a>
+        {% endfor %}
+    {%- endif -%}
 </div>
 
 <div id="post">

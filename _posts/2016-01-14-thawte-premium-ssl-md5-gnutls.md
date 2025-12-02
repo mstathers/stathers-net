@@ -1,6 +1,7 @@
 ---
 layout: posts
 title: GnuTLS, a Thawte CA certificate and CVE-2015-7575
+tags: linux ssl
 ---
 
 ### TLDR;

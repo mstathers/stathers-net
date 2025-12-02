@@ -1,6 +1,7 @@
 ---
 layout: posts
 title: HAProxy Service Discovery with AWS Autoscaling Groups
+tags: linux aws web_hosting
 ---
 
 ## Background and History

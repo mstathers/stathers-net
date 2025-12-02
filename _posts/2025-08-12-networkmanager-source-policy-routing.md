@@ -1,6 +1,7 @@
 ---
 layout: posts
 title: NetworkManager - Source Policy Routing
+tags: networking linux
 ---
 
 This can be considered a part two of a previous post on [source policy routing]({% post_url 2015-06-25-source-policy-routing %}). Review that post for an overview of source policy routing. 

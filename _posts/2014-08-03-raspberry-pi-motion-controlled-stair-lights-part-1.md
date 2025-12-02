@@ -1,6 +1,7 @@
 ---
 layout: posts
 title: Raspberry Pi - Motion Controlled LED Lights on Stairs - Part 1
+tags: electronics raspberry_pi
 ---
 
 A quick back-story, my parents purchased a house in 2012 which could be classified as a bit of a "fixer-upper". As the motivated people they are, they decided to perform a large majority of the renovations themselves.

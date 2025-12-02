@@ -1,6 +1,7 @@
 ---
 layout: posts
 title: Tailscale Funnel
+tags: linux jellyfin tailscale
 ---
 
 Recently I've been exploring the <a href="https://jellyfin.org/" target="_blank">Jellyfin</a> media system running via docker on my home file server. I've been really happy with it recommend it if you're looking for a solution to stream your media.

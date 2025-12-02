@@ -1,7 +1,12 @@
+.PHONY: generate_tags
+
 local:
 	jekyll serve --watch
 
-build:
+generate_tags:
+	bash generate_tags.sh
+
+build: generate_tags
 	jekyll build
 
 upload: build

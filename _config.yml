@@ -1,9 +1,11 @@
 highlighter: rouge
 url: http://stathers.net
 
+date_format: "%b %-d, %Y"
+
 gems: [jekyll-paginate]
 plugins: [jekyll-paginate]
 
 host: 127.0.0.1
 paginate: 1
-exclude: [README.md, Makefile]
+exclude: [README.md, Makefile, generate_tags.sh]

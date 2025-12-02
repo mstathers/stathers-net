@@ -1,6 +1,7 @@
 ---
 layout: posts
 title: Bash Tips to Increase Productivity
+tags: linux bash
 ---
 
 ### Reverse Command History Search

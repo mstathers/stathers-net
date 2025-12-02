@@ -1,6 +1,7 @@
 ---
 layout: posts
 title: Datadog PHP Tracer on aarch64
+tags: linux
 ---
 
 Recently we have been exploring the use of the a1 instance type in AWS EC2 as the performance is favorable to our workloads the cost makes this instance type very appealing. This instance type uses an ARM processor and therefor has the architecture of `aarch64`. More information about the instance class can be found <a href="https://aws.amazon.com/ec2/instance-types/a1/" target="_blank">here</a>.

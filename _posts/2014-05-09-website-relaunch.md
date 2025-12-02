@@ -1,6 +1,7 @@
 ---
 layout: posts
 title: Website Relaunch - Now with more Jekyll
+tags: web_hosting jekyll
 ---
 
 For various reasons, I decided to recreate my personal website. Although not lacking features, the old website was fairly ugly and used a very cobbled-together custom template approached that proved difficult to make many changes to.

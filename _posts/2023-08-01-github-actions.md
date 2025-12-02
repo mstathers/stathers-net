@@ -1,6 +1,7 @@
 ---
 layout: posts
 title: GitHub Actions for Continuous Deployment
+tags: linux web_hosting ci_cd github docker
 ---
 
 [GitHub Actions](https://github.com/features/actions){:target="_blank"} allows you to automate many facets of a project, whether you want to implement some automated testing via a continuous integration model, deploy a project automatically, or manage aspects of your GitHub repository itself. There are pricing tiers, but I find the free tier to be very generous for my needs; it includes 2000 minutes of runtime per month.

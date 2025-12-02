@@ -1,6 +1,7 @@
 ---
 layout: posts
 title: iptables - Simple Base Configuration
+tags: networking linux
 ---
 
 I find this is a great configuration to start with when working on a new server. From here, I typically customize based on the nature of the server. Hint: take a look at the listening services on the server and evaluate whether or not those services need to be locked down, database connections are a great example of this. I like to use a quick `netstat -nlp` command for this.
