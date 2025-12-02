@@ -10,7 +10,7 @@ layout: default
 
     {%- if page.tags -%}
         {% for tag in page.tags %}
-            <a href="{{site.baseurl}}/tag/{{tag | slugize}}">
+            <a href="{{site.baseurl}}/tag/{{tag | slugize}}.html">
                 #{{ tag }}
             </a>
         {% endfor %}
