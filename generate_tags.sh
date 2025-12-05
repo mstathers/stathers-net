@@ -11,6 +11,8 @@ for tag in $(grep -h tags: ./_posts/* | sed -e 's/^tags: //' | tr ' ' '\n' | sor
             continue
         fi
 
+        echo "Generated a tag file for $tag"
+
         echo "---
 layout: tagpage
 title: \"Tag: #$tag\"
